@@ -96,7 +96,7 @@ path {
 #hc2 {
     fill: none;
     stroke: #ef397a;
-    stroke-width: 3;
+    stroke-width: 2;
     transform-origin: 8rem 2rem;
     animation: h-translate 1s ease infinite alternate;
 }
