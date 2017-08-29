@@ -57,6 +57,12 @@ main h3 {
 }
 
 main .powered-by {
+    margin-top: 4rem;
+}
+
+main svg {
+    width: 30rem;
+    height: 4rem;
     margin: 4rem 0;
 }
 
@@ -67,4 +73,79 @@ footer {
     flex-shrink: 0;
     height: 8rem;
     background-color: #2972b9;
+}
+
+
+/** SVG Elements **/
+
+path {
+    stroke-linecap: round;
+}
+
+#svg1 path {
+    stroke-width: 3;
+}
+
+#mc1 {
+    fill: #478ecb;
+    transform-origin: 15rem 2rem;
+    animation: scale 500ms ease infinite alternate;
+}
+
+#mg1 {
+    stroke: #0955a0;
+    transform-origin: 16rem 1rem;
+    animation: rotate 500ms linear infinite;
+}
+
+#mg2 {
+    stroke: #b0e0dc;
+    transform-origin: 23rem 2rem;
+    animation: rotate 1s linear infinite alternate;
+}
+
+#mg3 {
+    transform-origin: 7rem 2rem;
+    animation: rotate 1s linear infinite;
+}
+
+#mc2 {
+    fill: #ef397a;
+}
+
+#mc3 {
+    fill: #478ecb;
+}
+
+
+/** Animation Definitions **/
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes rotate-scale {
+    from {
+        transform: rotate(0deg) scale(0.8);
+    }
+
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
 }
