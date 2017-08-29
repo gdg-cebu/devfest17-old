@@ -38,7 +38,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 8rem 2rem;
     text-align: center;
 }
 
