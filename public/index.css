@@ -25,8 +25,16 @@ body {
 
 header {
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
     min-height: 8rem;
     background-color: #273990;
+}
+
+header svg {
+    width: 16rem;
+    height: 8rem;
+    margin-left: auto;
 }
 
 
@@ -75,41 +83,64 @@ footer {
 /** SVG Elements **/
 
 path {
+    stroke-width: 3;
     stroke-linecap: round;
 }
 
-#svg1 path {
-    stroke-width: 3;
+#hc1 {
+    fill: #fabf15;
+    transform-origin: 6rem 6rem;
+    animation: scale 500ms -250ms ease infinite alternate;
 }
 
-#mc1 {
+#hc2 {
+    fill: none;
+    stroke: #ef397a;
+    stroke-width: 3;
+    transform-origin: 8rem 2rem;
+    animation: h-translate 1s ease infinite alternate;
+}
+
+#hg1 {
+    stroke: #fff;
+    transform-origin: 9rem 3rem;
+    animation: rotate 1s linear infinite reverse;
+}
+
+#hp1 {
+    fill: #ef397a;
+    transform-origin: 13rem 4rem;
+    animation: rotate 2s linear infinite;
+}
+
+#ac1 {
     fill: #478ecb;
     transform-origin: 15rem 2rem;
     animation: scale 500ms ease infinite alternate;
 }
 
-#mg1 {
+#ag1 {
     stroke: #0955a0;
     transform-origin: 16rem 1rem;
     animation: rotate 500ms linear infinite;
 }
 
-#mg2 {
+#ag2 {
     stroke: #b0e0dc;
     transform-origin: 23rem 2rem;
     animation: rotate 1s linear infinite alternate;
 }
 
-#mg3 {
+#ag3 {
     transform-origin: 7rem 2rem;
     animation: rotate 1s linear infinite;
 }
 
-#mc2 {
+#ac2 {
     fill: #ef397a;
 }
 
-#mc3 {
+#ac3 {
     fill: #478ecb;
 }
 
@@ -143,5 +174,15 @@ path {
 
     to {
         transform: rotate(360deg) scale(1.5);
+    }
+}
+
+@keyframes h-translate {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-20%);
     }
 }
