@@ -125,41 +125,51 @@ main .powered-by p:last-child {
     font-weight: 700;
 }
 
-main svg {
-    width: 30rem;
+aside {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto;
+    width: 20rem;
+    pointer-events: none;
+}
+
+aside svg {
+    width: 4rem;
     height: 4rem;
-    margin: 4rem 0;
 }
 
-#ac1 {
-    fill: #478ecb;
-    transform-origin: 15rem 2rem;
-    animation: scale 500ms ease infinite alternate;
-}
-
-#ag1 {
-    stroke: #0955a0;
-    transform-origin: 16rem 1rem;
-    animation: rotate 500ms linear infinite;
-}
-
-#ag2 {
-    stroke: #b0e0dc;
-    transform-origin: 23rem 2rem;
-    animation: rotate 1s linear infinite alternate;
-}
-
-#ag3 {
-    transform-origin: 7rem 2rem;
+#a-svg1 {
+    transform-origin: center center;
     animation: rotate 1s linear infinite;
 }
 
-#ac2 {
+#a-svg1 circle:first-child {
     fill: #ef397a;
 }
 
-#ac3 {
+#a-svg1 circle:last-child {
     fill: #478ecb;
+}
+
+#a-svg2 circle {
+    fill: #478ecb;
+    transform-origin: 2rem 2rem;
+    animation: scale 500ms ease infinite alternate;
+}
+
+#a-svg2 path {
+    stroke: #0955a0;
+    transform-origin: 3rem 1rem;
+    animation: rotate 500ms linear infinite;
+}
+
+#a-svg3 {
+    transform-origin: center center;
+    animation: rotate 1s ease infinite alternate;
+}
+
+#a-svg3 path {
+    stroke: #b0e0dc;
 }
 
 @media (min-width: 700px) {
@@ -186,7 +196,29 @@ main svg {
     }
 
     aside {
-        display: none;
+        width: 50vmin;
+        height: 50vmin;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #a-svg1 {
+        position: absolute;
+        top: 0;
+        right: 15%;
+    }
+
+    #a-svg2 {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+    }
+
+    #a-svg3 {
+        position: absolute;
+        top: 25%;
+        left: 50%;
     }
 }
 
