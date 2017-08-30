@@ -31,7 +31,18 @@ header {
     background-color: #273990;
 }
 
+header a {
+    height: 100%;
+    margin-left: 1.6rem;
+}
+
+header img {
+    display: block;
+    height: 5rem;
+}
+
 header svg {
+    flex-shrink: 0;
     width: 16rem;
     height: 8rem;
     margin-left: auto;
