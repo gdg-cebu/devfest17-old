@@ -78,9 +78,13 @@ header svg {
         position: absolute;
         top: 0;
         left: 0;
-        width: 50vmin;
-        height: 50vmin;
+        width: 60vmin;
+        height: 60vmin;
         clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+
+    header a {
+        margin-left: 2.4rem;
     }
 
     header img {
@@ -171,6 +175,10 @@ main svg {
         margin-top: auto;
     }
 
+    main h2 {
+        margin-bottom: 0.25em;
+    }
+
     main .get-in-touch {
         align-self: flex-start;
         margin-top: auto;
@@ -179,6 +187,30 @@ main svg {
 
     aside {
         display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    main h1 {
+        margin-bottom: 0.25em;
+        font-size: 7rem;
+    }
+
+    main h2 {
+        margin: 0.25em 0;
+        font-size: 2.4em;
+    }
+
+    main .powered-by {
+        font-size: 1em;
+    }
+
+    main .powered-by p:last-child {
+        font-size: 2em;
+    }
+
+    main .get-in-touch {
+        font-size: 1.25em;
     }
 }
 
@@ -203,8 +235,8 @@ footer img {
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 50vmin;
-        height: 50vmin;
+        width: 60vmin;
+        height: 60vmin;
         margin-top: auto;
         clip-path: polygon(100% 0, 100% 100%, 0 100%);
     }
