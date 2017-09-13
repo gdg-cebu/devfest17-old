@@ -53,3 +53,32 @@ body {
     margin-top: -1.6rem;
     margin-right: 2rem;
 }
+
+.splash-section hr {
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid #eee;
+    margin: 3rem 0;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-details .detail {
+    padding-left: 2.8rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    background: center left no-repeat;
+    background-size: auto 80%;
+    opacity: 0.75;
+}
+
+.event-details .detail.time {
+    background-image: url("images/calendar.png");
+}
+
+.event-details .detail.venue {
+    background-image: url("images/location.png");
+}
