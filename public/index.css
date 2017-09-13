@@ -82,3 +82,17 @@ body {
 .event-details .detail.venue {
     background-image: url("images/location.png");
 }
+
+.register-btn {
+    display: inline-block;
+    padding: 0 2em;
+    border-radius: 5px;
+    margin-top: 6rem;
+    font-weight: 600;
+    line-height: 3em;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1c4e8a;
+}
