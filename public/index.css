@@ -10,349 +10,46 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100vh;
     margin: 0;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.6em;
-    color: #444;
+    color: #333;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 5vh 5vw;
 }
 
 
-/** Header **/
+/** Splash Section **/
 
-header {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    min-height: 8rem;
-    position: relative;
-    background-color: #273990;
-}
-
-header a {
-    margin-left: 1.6rem;
-}
-
-header img {
-    display: block;
-    height: 5rem;
-}
-
-header svg {
-    width: 4rem;
-    height: 4rem;
-}
-
-#h-svg1 {
-    position: absolute;
-    right: 10rem;
-    bottom: 0;
-}
-
-#h-svg1 circle {
-    fill: #fabf15;
-    transform-origin: 2rem 2rem;
-    animation: scale 500ms ease infinite alternate;
-}
-
-#h-svg2 {
-    width: 12rem;
-    position: absolute;
-    top: 0;
-    right: 6rem;
-}
-
-#h-svg2 circle {
-    fill: none;
-    stroke: #ef397a;
-    stroke-width: 2;
-    animation: h-translate 1.5s ease infinite alternate;
-}
-
-#h-svg2 path {
-    stroke: #fff;
-    transform-origin: 10rem 2.5rem;
-    animation: rotate 1s linear infinite reverse;
-}
-
-#h-svg3 {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-}
-
-#h-svg3 polygon {
-    fill: #ef397a;
-    transform-origin: 2rem 2rem;
-    animation: rotate 3s linear infinite;
-}
-
-@media (min-width: 700px) {
-    header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 60vmin;
-        height: 60vmin;
-        clip-path: polygon(0 0, 100% 0, 0 100%);
-    }
-
-    header a {
-        margin-left: 2.4rem;
-    }
-
-    header img {
-        width: 25vmin;
-        height: auto;
-        margin-bottom: 15vmin;
-    }
-
-    #h-svg1 {
-        left: 3rem;
-        bottom: 20vmin;
-    }
-
-    #h-svg2 {
-        top: 3vmin;
-        right: 40vmin;
-    }
-
-    #h-svg3 {
-        top: 10vmin;
-        right: 20vmin;
-    }
-}
-
-
-/** Content **/
-
-main {
-    flex: 1 0 0;
-    padding: 6rem 2rem;
-    text-align: center;
-}
-
-main h1 {
-    font-size: 2.4em;
-    font-weight: 700;
-}
-
-main h2 {
-    margin: 1em 0;
-}
-
-main h3 {
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-main .powered-by {
-    margin-top: 4rem;
-}
-
-main .powered-by p:last-child {
-    font-weight: 700;
-}
-
-aside {
-    display: flex;
-    justify-content: space-between;
-    margin: 4rem auto;
-    width: 20rem;
-    pointer-events: none;
-}
-
-aside svg {
-    width: 4rem;
-    height: 4rem;
-}
-
-#a-svg1 {
-    transform-origin: center center;
-    animation: rotate 1s linear infinite;
-}
-
-#a-svg1 circle:first-child {
-    fill: #ef397a;
-}
-
-#a-svg1 circle:last-child {
-    fill: #478ecb;
-}
-
-#a-svg2 circle {
-    fill: #478ecb;
-    transform-origin: 2rem 2rem;
-    animation: scale 500ms ease infinite alternate;
-}
-
-#a-svg2 path {
-    stroke: #0955a0;
-    transform-origin: 3rem 1rem;
-    animation: rotate 500ms linear infinite;
-}
-
-#a-svg3 {
-    transform-origin: center center;
-    animation: rotate 1s ease infinite alternate;
-}
-
-#a-svg3 path {
-    stroke: #b0e0dc;
-}
-
-@media (min-width: 700px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-    }
-
-    main h1 {
-        margin-top: auto;
-    }
-
-    main h2 {
-        margin-bottom: 0.25em;
-    }
-
-    main .get-in-touch {
-        align-self: flex-start;
-        margin-top: auto;
-        text-align: left;
-    }
-
-    aside {
-        width: 50vmin;
-        height: 50vmin;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    #a-svg1 {
-        position: absolute;
-        top: 0;
-        right: 15%;
-    }
-
-    #a-svg2 {
-        position: absolute;
-        top: 5%;
-        left: 30%;
-    }
-
-    #a-svg3 {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-    }
-}
-
-@media (min-width: 900px) {
-    main h1 {
-        margin-bottom: 0.25em;
-        font-size: 7rem;
-    }
-
-    main h2 {
-        margin: 0.25em 0;
-        font-size: 2.4em;
-    }
-
-    main .powered-by {
-        font-size: 1em;
-    }
-
-    main .powered-by p:last-child {
-        font-size: 2em;
-    }
-
-    main .get-in-touch {
-        font-size: 1.25em;
-    }
-}
-
-
-/** Footer **/
-
-footer {
-    flex-shrink: 0;
+.splash-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8rem;
-    background-color: #04adee;
 }
 
-footer img {
-    height: 2.8rem;
+.splash-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
 }
 
-@media (min-width: 700px) {
-    footer {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 60vmin;
-        height: 60vmin;
-        margin-top: auto;
-        clip-path: polygon(100% 0, 100% 100%, 0 100%);
-    }
-
-    footer a {
-        align-self: flex-end;
-    }
-
-    footer img {
-        width: 15vmin;
-        height: auto;
-        margin-bottom: 5vmin;
-    }
+.hosts-bubble {
+    width: 50%;
+    margin-bottom: -2rem;
 }
 
-
-/** SVG Elements **/
-
-path {
-    stroke-width: 3;
-    stroke-linecap: round;
+.devfest-splash {
+    width: 100%;
 }
 
-
-/** Animation Definitions **/
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes scale {
-    from {
-        transform: scale(0.8);
-    }
-
-    to {
-        transform: scale(1.5);
-    }
-}
-
-@keyframes h-translate {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
+.powered-by-google {
+    align-self: flex-end;
+    width: 30%;
+    margin-top: -1.6rem;
+    margin-right: 2rem;
 }
