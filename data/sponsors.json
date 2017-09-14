@@ -1,9 +1,11 @@
-[{
-  "name": "Sponsor Group Name",
-  "sponsors": [
-    {
-      "name": "Sponsor Name",
-      "image": "/static/images/logo.png"
-    }
-  ]
-}]
+[
+  {
+    "name": "General Sponsor",
+    "sponsors": [
+      {
+        "name": "Google",
+        "image": "/static/images/sponsors/google.svg"
+      }
+    ]
+  }
+]
