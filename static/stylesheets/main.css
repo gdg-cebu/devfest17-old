@@ -368,13 +368,26 @@ a {
 .speaker {
     margin: 2rem 0;
     text-align: center;
-    border-radius: 5px;
     overflow: hidden;
 }
 
 
 .speaker-avatar {
-    width: 100%;
+    width: 75%;
+    border: 1rem solid red;
+    border-radius: 50%;
+}
+
+.speaker:nth-child(3n) .speaker-avatar {
+    border-color: #de4c40;
+}
+
+.speaker:nth-child(3n+1) .speaker-avatar {
+    border-color: #fec110;
+}
+
+.speaker:nth-child(3n+2) .speaker-avatar {
+    border-color: #18a05b;
 }
 
 

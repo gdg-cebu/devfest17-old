@@ -1,19 +1,23 @@
-[{
-  "name": "Speaker Name",
-  "position": "Position",
-  "company": "Company",
-  "bio": "Speaker bio",
-  "image": "/static/images/logo.png"
-}, {
-  "name": "Speaker Name",
-  "position": "Position",
-  "company": "Company",
-  "bio": "Speaker bio",
-  "image": "/static/images/logo.png"
-}, {
-  "name": "Speaker Name",
-  "position": "Position",
-  "company": "Company",
-  "bio": "Speaker bio",
-  "image": "/static/images/logo.png"
-}]
+[
+  {
+    "name": "Shad Roi de la Cruz",
+    "position": "Special Operations",
+    "company": "Symph",
+    "bio": "Speaker bio",
+    "image": "/static/images/speakers/shad-roi.jpg"
+  },
+  {
+    "name": "Shad Roi de la Cruz",
+    "position": "Special Operations",
+    "company": "Symph",
+    "bio": "Speaker bio",
+    "image": "/static/images/speakers/shad-roi.jpg"
+  },
+  {
+    "name": "Shad Roi de la Cruz",
+    "position": "Special Operations",
+    "company": "Symph",
+    "bio": "Speaker bio",
+    "image": "/static/images/speakers/shad-roi.jpg"
+  }
+]
