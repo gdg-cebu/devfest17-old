@@ -295,13 +295,20 @@ a {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(45deg, rgba(0, 150, 136, 0.25), rgba(139, 195, 74, 0.15), rgba(63, 81, 181, 0.35));
+    background: url("../images/footer-bg.png") center bottom no-repeat;
+    background-size: 30%;
+}
+
+
+#landing .event-hosts {
+    width: 35vmin;
+    max-width: 24rem;
 }
 
 
 #landing .event-logo {
     width: 70vmin;
-    max-width: 36rem;
+    max-width: 48rem;
 }
 
 
