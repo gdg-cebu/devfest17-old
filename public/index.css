@@ -18,7 +18,15 @@ body {
 
 .section {
     min-height: 100vh;
-    padding: 5vh 5vw;
+    padding: 5vh 10vw;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
 }
 
 
@@ -30,14 +38,6 @@ body {
     align-items: center;
     background: url("images/corner-banner-1.png") top right no-repeat;
     background-size: 40vmin auto;
-}
-
-.splash-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 60rem;
 }
 
 .hosts-bubble {
@@ -97,4 +97,20 @@ body {
     text-transform: uppercase;
     color: #fff;
     background-color: #1c4e8a;
+}
+
+
+/** About Section **/
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("images/section-footer.png") center 95% no-repeat;
+    background-size: 90%;
+}
+
+.about-section p {
+    line-height: 1.6;
+    opacity: 0.5;
 }
