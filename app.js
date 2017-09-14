@@ -16,8 +16,9 @@ app.use(favicon(path.join(__dirname, 'static', 'images', 'favicon.ico')));
 
 app.use('/static', express.static(path.join(__dirname, 'static')));
 app.use('/sw.js', express.static(path.join(__dirname, 'static', 'javascripts', 'sw.js')));
-app.use('/offline-google-analytics', express.static(path.join(
-    __dirname, 'node_modules', 'sw-offline-google-analytics', 'build')));
+app.use('/sw-offline-google-analytics.js', express.static(path.join(
+    __dirname, 'node_modules', 'sw-offline-google-analytics', 'build',
+    'importScripts', 'sw-offline-google-analytics.prod.v0.0.25.js')));
 
 app.use((req, res, next) => {
     res.locals.secrets = config.get('SECRETS');
@@ -30,7 +31,7 @@ app.get('/', (req, res) => {
         read(__dirname, 'data', 'speakers.json'),
         read(__dirname, 'data', 'sessions.json'),
         read(__dirname, 'data', 'sponsors.json')
-    ]).then([speakers, sessions, sponsors] => {
+    ]).then(([speakers, sessions, sponsors]) => {
         const context = {
             map: mapUrl(),
             speakers: speakers.sort(_ => Math.random() - 0.5),
