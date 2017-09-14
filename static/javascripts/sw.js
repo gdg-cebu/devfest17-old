@@ -1,8 +1,8 @@
-importScripts('/offline-google-analytics/offline-google-analytics-import.js');
+importScripts('/sw-offline-google-analytics.js');
 goog.offlineGoogleAnalytics.initialize();
 
-const cacheName = 'devfest17-v1';
-const pathsToCache = [
+var cacheName = 'devfest17-v1';
+var pathsToCache = [
     '/',
     '/faqs',
     '/coc',
@@ -11,7 +11,7 @@ const pathsToCache = [
     '/static/stylesheets/main.min.css',
     '/static/javascripts/main.min.js',
     '/static/javascripts/sw-register.min.js',
-    '/offline-google-analytics/offline-google-analytics-import.js',
+    '/sw-offline-google-analytics.js',
     '/static/images/logo.png',
     '/static/images/gdg-logo.png',
     '/static/fonts/droid-sans/bold.ttf',
