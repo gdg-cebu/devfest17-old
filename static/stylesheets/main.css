@@ -332,6 +332,11 @@ a {
 
 /** About Section **/
 
+#about p {
+    line-height: 1.6;
+}
+
+
 .venue-map {
     display: block;
     width: calc(100% + 20vw);
