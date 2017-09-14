@@ -20,7 +20,7 @@ body {
 
 
 a {
-    color: #388e32;
+    color: #5f86c5;
 }
 
 
@@ -313,7 +313,7 @@ a {
     font-size: 0.9em;
     font-weight: bold;
     color: #fff;
-    background-color: #388e32;
+    background-color: #5f86c5;
 }
 
 .register-btn:hover,
@@ -438,7 +438,7 @@ a {
     position: absolute;
     top: calc(50% - 2rem);
     z-index: 1;
-    background-color: #388e32;
+    background-color: #5f86c5;
     border-radius: 50%;
     cursor: pointer;
     outline: none;
@@ -569,7 +569,7 @@ a {
     text-align: center;
     line-height: 5rem;
     color: #fff;
-    background-color: #388e32;
+    background-color: #5f86c5;
     border-radius: 50%;
 }
 
@@ -596,7 +596,7 @@ a {
         height: calc(50% + 2.5rem);
         position: absolute;
         left: calc(15rem - 1px);
-        background-color: #388e32;
+        background-color: #5f86c5;
     }
 
     .session::before {
